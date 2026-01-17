@@ -1,0 +1,40 @@
+@import url("./variables.css");
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__title1{
+    color: var(--primary-color-cafe);
+}
+
+.menu__title2{
+    color: var(--primary-color-terracota);
+}
+
+.menu__container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 10px;
+    margin: auto;
+
+}
+
+.menu__card{
+    margin: 0px;
+
+}
+
+.menu__card-title{
+    margin: 0px;
+    font-family: var(--font-family-bold);
+}
+
+.menu__card-description{
+    margin: 0px;
+    font-family: var(--font-family);
+    text-align: center;
+}
+

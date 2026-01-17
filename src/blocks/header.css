@@ -1,0 +1,86 @@
+@import url("./variables.css");
+
+.header {
+  background-color: white;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  /* width: 100%; */
+
+  justify-items: center;
+  justify-content: space-around;
+
+  margin: 20px auto;
+  border-bottom: 1px solid #545454;
+  max-width: 905px;
+  max-height: 100px;
+}
+
+.header__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.header__menu, .header__about, .header__services, .header__contact{
+  padding: 20px;
+  font-family: var(--font-family);
+}
+
+.header__button{
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+.header__button_reservation{
+  background-color: none;
+  border: none;
+
+  color: black;
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  cursor: pointer;
+  height: 50px;
+}
+
+.header__button_sideBar{
+  background-color: none;
+  border: none;
+
+  color: black;
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  cursor: pointer;
+  height: 50px;
+}
+
+.header__image {
+  padding-bottom: 40px;
+  height: 100px;
+}
+
+
+@media screen and (max-width: 605px) {
+  .header {
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 606px) and (max-width: 905px) {
+  .header {
+    margin: 20px 20px;
+  }
+}

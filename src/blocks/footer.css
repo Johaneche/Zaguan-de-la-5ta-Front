@@ -1,0 +1,44 @@
+.footer {
+  border-top: 1px solid black;
+
+  max-width: 905px;
+  margin: auto;
+
+  color: #545454;
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.titulo4{
+  margin: 0px;
+  padding: 10px;
+}
+
+.footer__grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+}
+
+.footer__container{
+  /* border-top: 1px solid black; */
+  margin: 0;
+
+}
+.footer__author{
+  /* border-top: 1px solid black; */
+  padding: 10px;
+  margin: 0px;
+}
+
+.footer__logo{
+  height: 70px;
+}
+
+@media screen and (max-width: 605px) {
+  .footer {
+    font-size: 14px;
+  }
+}

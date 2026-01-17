@@ -1,0 +1,53 @@
+@import url("./variables.css");
+
+.history{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.history__container{
+    display: flex;
+}
+
+/* .history__container_description{ } */
+
+.history__titulo1{
+    margin: 0px auto 20px;
+    font-family: var(--font-family-bold);
+    font-size: 52px;
+    color: var(--primary-color-terracota);
+}
+
+.history__titulo2{
+    padding-top: 50px;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    
+    color: var(--primary-color-terracota);
+}
+
+.history__text{
+    margin: 0px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.history__container_description{
+width: 500px;
+}
+
+.history__imagen_container{
+    width: 500px;
+    justify-content: center;
+}
+
+.history__imagen{
+    height: 90%;
+    width: 90%;
+}
+

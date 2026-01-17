@@ -1,0 +1,147 @@
+/* .heroSection {
+  margin: auto;
+
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/imagen-fondo1.jpg");
+} */
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-image: url("../images/Logo-Horizontal-Full-Color-PNG.png"); */
+}
+
+.main__img-profile {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+}
+
+.main__img-profile:hover {
+  opacity: 40%;
+  cursor: url("../images/edit-profile.svg") 1 1, auto;
+}
+
+.main__content-paragraph {
+  margin-left: 30px;
+  margin-right: 165px;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.main__paragraph_name {
+  margin: 0px;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.main__button_edit {
+  border: 1px solid #545454;
+  background-color: #000000;
+  max-width: 24px;
+  max-height: 24px;
+
+  align-items: end;
+}
+
+.main__button_edit:hover {
+  border: 1px solid #ffffff;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.main__paragraph_about {
+  margin: 0px;
+
+  grid-column: 1 / 3;
+
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.main__button_add {
+  font-size: 22px;
+  border: 1px solid #545454;
+  background-color: #000000;
+  color: #fff;
+
+  width: 100%;
+  max-width: 150px;
+  max-height: 50px;
+  padding: 0px;
+}
+
+.main__button_add:hover {
+  border: 2px solid #ffffff;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 605px) {
+  .main {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: 36px 20px;
+  }
+
+  .main__img-profile {
+    align-self: center;
+  }
+
+  .main__content-paragraph {
+    margin: 0;
+  }
+
+  .main__paragraph_name {
+    text-align: center;
+
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .main__paragraph_about {
+    text-align: center;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  .main__button_add {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 606px) and (max-width: 905px) {
+  .main {
+    margin: 20px;
+  }
+  .main__content-paragraph {
+    margin: 0;
+    grid-template-rows: repeat(2, auto);
+  }
+  .main__paragraph_name {
+    padding: 0;
+    margin: 0;
+  }
+  .main__paragraph_about {
+    padding: 0;
+    margin: 0;
+  }
+}
