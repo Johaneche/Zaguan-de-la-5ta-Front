@@ -1,42 +1,81 @@
 @import url("./variables.css");
 
+/* .container{
+    max-width: 1200px;
+    overflow-x: hidden;
+} */
+
 .heroSection__container{
     display: flex;
     flex-direction: column;
-    height: 410px; 
+    justify-content: center;
+
+    background-image: url("../../src/images/fondoHero.png");
+    /* opacity: 0.5; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    width: 100vw;
+    height: 100vh;
 }
 
-.container{
-    margin: auto;
-}
-
-.heroSection__titulo1{
-    margin: 0px auto 20px;
-    font-family: var(--font-family-bold);
-    font-size: 52px;
-    /* font-weight: 500; */
-    color: var(--primary-color-terracota);
-}
-
-.heroSection__titulo2{
-    padding-top: 50px;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+.heroSection__title{
+    margin: 0px;
+    padding: 20px;
     
-    color: var(--primary-color-terracota);
+    font-family: var(--font-family-bold);
+    font-size: var(--font-size-xxl);
+    /* color: var(--primary-color-terracota-ultraclaro); */
+    color: white;
+}
+
+.heroSection__subtitle{
+    margin: 0px;
+    padding-top: 50px;
+
+    
+    font-family: var(--font-family-bold);
+    font-size: var(--font-size-s);
+    /* color: var(--primary-color-terracota-ultraclaro); */
+    color: white;
 }
 
 .heroSection__text{
     margin: 0px;
-    font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: 500;
     padding: 0px;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-l);
+    /* color: var(--primary-color-terracota-ultraclaro); */
+    color: white;
 }
 
-.header__button_book{
-    background-color: var(--primary-color-terracota-ultraclaro);
-    border-style: none;
+/* .heroSection__title, .heroSection__subtitle, .heroSection__text{
+    display: none;
+} */
+
+@media screen and (1023px <= width){
+    
 }
+
+@media screen and (768px <= width <= 1023px){
+    
+}
+
+
+@media screen and (width <= 767px){
+    .heroSection__title{
+        font-size: var(--font-size-xl);
+    }
+
+    .heroSection__subtitle{
+        font-size: var(--font-size-xs);
+    }
+
+    .heroSection__text{
+        font-size: var(--font-size-m);
+    }
+}
+
 

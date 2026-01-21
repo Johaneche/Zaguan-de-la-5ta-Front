@@ -1,4 +1,4 @@
-import logo from "../../images/Logo-Full-Color-PNG.png";
+import logo from "../../images/Logo-Una-Tinta-Amarillo-PNG.png";
 
 // import { useLocation, useNavigate } from "react-router-dom";
 
@@ -45,35 +45,57 @@ function Header() {
   };
 
   return (
-    <header className="header">
-        <img className="header__image" src={logo} alt="Carga imagen del header" />
+    <header className="header container">
+
+        <div className="header__image">
+          <img className="header__logo" src={logo} alt="Carga imagen del header" />
+        </div>
         
-        
-        <div className="header__container max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <p href="#menu" className="header__menu">
+        <nav className="header__nav header__nav_visible">
+          <button className="header__button_close" onClick={handleClick}>X</button>
+
+          <ul className="nav-list">  
+            <li><a className="" href="#menu">Menú</a></li>
+            <li><a className="" href="#menu">Quienes Somos</a></li>
+            <li><a className="" href="#menu">Servicios</a></li>
+            <li><a className="" href="#menu">Contacto</a></li>
+          </ul>
+        </nav>
+
+                
+        {/* <div className="header__container">
+            <p className="header__nav header-menu" href="#menu">
                 Menú
             </p>
 
-            <p href="#about" className="header__about">
-                Acerca de
+            <p className="header__nav header-about" href="#about" >
+                Quienes Somos
             </p>
 
-            <p href="#services" className="header__services">
+            <p className="header__nav header-services" href="#services">
                 Servicios
             </p>
             
-            <p href="#contact" className="header__contact">
+            <p className="header__nav header-contact" href="#contact">
                 Contacto
             </p>
-           
-        </div>
 
-        <div className="header__button">
+            <div className="header__button-hamburguer">
+                <button className="header__button_open-nav">
+                  ≡
+                </button>
+            </div>     
+        </div> */}
+
+        <div className="header__nav header__button">
             <button className="header__button_book">Reservar</button>
         </div>
-        
 
-        
+        <button className="header__button_open">
+          ≡
+        </button>
+
+              
     </header>
   );
 }

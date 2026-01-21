@@ -1,62 +1,44 @@
 // import fotos from "https://picsum.photos/200/300";
+import logo1 from "../../images/steak.jpg";
+import logo2 from "../../images/seafood.jpg";
+import logo3 from "../../images/sangria.jpg";
+
 
 function Menu() {
     return (
-        <section className="menu">
-            <h2 className="menu__title1">Nuestro Menú</h2>
-            <h3 className="menu__title2">Deléitate con sabores auténticos del territorio yumbeño</h3>
+        <section className="menu container">
+
+            <h2 className="menu__title">Nuestras Sugerencias</h2>
+
             <div className="menu__container">
+
                 <div className="menu__card">
-                    <h3 className="menu__card-title">Costilla</h3>
+                    <img className="menu__image" src={logo1} alt="Carga imagen del header"/>
                     <p className="menu__card-description">
-                        Costilla de cerdo (250gr), servida con salsa BBQ, 
-                        papas confitadas y ensalada de la casa
+                        Para los Steak lovers, distruta de los mejores cortes
                     </p>
                 </div>
 
                 <div className="menu__card">
-                    <h3 className="menu__card-title">Costilla a la Brasa</h3>
+                    <img className="menu__image" src={logo2} alt="Carga imagen del header"/>
                     <p className="menu__card-description">
-                        Corte de costilla de res (250gr) braseada al carbón, 
-                        flambeada con tequila, mantequilla aromatizada, 
-                        salsa bbq y  guacamole.
+                        Para los Pasta lovers, distruta de la mejor pasta
                     </p>
                 </div>
 
                 <div className="menu__card">
-                    <h3 className="menu__card-title">Cazuela</h3>
+                    <img className="menu__image" src={logo3} alt="Carga imagen del header"/>
                     <p className="menu__card-description">
-                        Cremosa sopa de mariscos (langostinos, camarones, pulpo, mejillones, 
-                        almejas y pescado), acompañada de tostadas de 
-                        plátano verde y aguacate.
+                        Distruta de los mejores cocktails para compartir
                     </p>
                 </div>
 
-                <div className="menu__card">
-                    <h3 className="menu__card-title">Salmón Gratinado</h3>
-                    <p className="menu__card-description">
-                        Salmón fresco (250gr) con puré, salsa base de aguacate, 
-                        acompañado de pico de gallo y tortilla de maíz frita.
-                    </p>
-                </div>
-
-                <div className="menu__card">
-                    <h3 className="menu__card-title">New York Steak</h3>
-                    <p className="menu__card-description">
-                        Corte de res importada (300gr), sin hueso parrillado, 
-                        servido con ensalada de la casa más acompañamiento a elección.
-                    </p>
-                </div>
-
-                <div className="menu__card">
-                    <h3 className="menu__card-title">Tomahawk</h3>
-                    <p className="menu__card-description">
-                        Corte de carne Angus importada (300gr). Flambeado a la mesa con tequila.
-                    </p>
-                </div>
 
             </div>
 
+            <div className="menu__button">
+                <button className="menu__button_book">Ver Nuestro Menu</button>
+            </div>
 
         </section>
     );

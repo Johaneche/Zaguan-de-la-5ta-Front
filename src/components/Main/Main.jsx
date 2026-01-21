@@ -1,34 +1,18 @@
+
 import HeroSection from "./HeroSection";
 import History from "./History";
 import Menu from "./Menu";
+import Contact from "./Contact";
 
 function Main() {
     
      return (
-    <main className="content">
+    <main className="content container">
 
       <HeroSection/>
       <History/>
       <Menu/>
-
-
-      
-
-      {/* <section className="menu">
-        <h2>Menú</h2>
-      </section> */}
-
-      {/* <section className="servicios">
-        <h2>Nuestros Servicios</h2>
-      </section> */}
-
-      {/* <section className="reseñas">
-        <h2>Reseñas</h2>
-      </section> */}
-
-      {/* <section className="contacto">
-        <h2>Contacto</h2>
-      </section> */}
+      <Contact/>
 
     </main>
   );

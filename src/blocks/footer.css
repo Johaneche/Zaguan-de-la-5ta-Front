@@ -1,41 +1,89 @@
-.footer {
-  border-top: 1px solid black;
+@import url("./variables.css");
 
-  max-width: 905px;
-  margin: auto;
-
-  color: #545454;
-  font-family: "Inter-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-}
-
-.titulo4{
+*{
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
 }
 
-.footer__grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
+.footer {
+  margin: 10px auto;
+  /* border-top: 1px solid black; */
+  /* color: #545454;  */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.57);
 }
 
 .footer__container{
-  /* border-top: 1px solid black; */
-  margin: 0;
+  /* display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  display: flex;
 
+  justify-content: space-around;
+  align-content: center;
 }
-.footer__author{
-  /* border-top: 1px solid black; */
+.footer__contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo-facebook{
+  height: 25px;
+}
+.footer__media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title{
   padding: 10px;
-  margin: 0px;
+
+  
+  font-family: var(--font-family);
+  font-size: var(--font-size-m);
+  /* color: var(--primary-color-terracota); */
+  color: white;
+}
+
+.footer__subtitle{
+  padding: 2px;
+
+  
+  font-family: var(--font-family);
+  font-size: var(--font-size-m);
+  font-weight: 100;
+  /* color: var(--primary-color-terracota); */
+  color: white;
+}
+
+.footer__description{
+  font-family: var(--font-family);
+  font-size: var(--font-size-s);
 }
 
 .footer__logo{
-  height: 70px;
+  height: 80px;
 }
+
+.footer__container{
+  margin: 0;
+}
+
+.footer__author{
+  padding-bottom: 10px;
+  
+  font-family: var(--font-family);
+  font-size: var(--font-size-s);
+}
+
+.footer__media{
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  width: 100%;
+}
+
+
 
 @media screen and (max-width: 605px) {
   .footer {

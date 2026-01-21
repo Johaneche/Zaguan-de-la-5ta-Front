@@ -3,11 +3,11 @@ import image from "../../../src/images/imagen-fondo1.png";
 
 function History() {
     return(
-        <section className="history">
+        <section className="history container">
             <div className="history__container">
                 <div className="history__container_description">
-                    <h2 className="history__titulo2">Nuestra Historia</h2>
-                    <h1 className="history__titulo1">Zaguán de la Quinta</h1>
+                    <h2 className="history__subtitle">NUESTRA HISTORIA</h2>
+                    <h1 className="history__title">Zaguán de la Quinta</h1>
                     <p className="history__text">
                         Zaguán es el proyecto gastronómico de la chef Fanery Collazos, 
                         un espacio donde se expresan los auténticos sabores del territorio 

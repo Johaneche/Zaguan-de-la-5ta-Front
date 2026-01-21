@@ -1,23 +1,36 @@
-import logo from "../../images/Logo-Full-Color-PNG.png";
+// import logo from "../../images/Logo-Full-Color-PNG.png";
+// import logo from "../../images/Logo-Una-Tinta-Amarillo-PNG.png";
+import logo from "../../images/Logo-Horizontal-Una-Tinta-Amarillo-PNG.png";
+import iconFacebook from "../../images/icon-facebook.png";
+import iconInstagram from "../../images/icon-instagram.png";
+import iconWhatsApp from "../../images/icon-whatsapp.png";
+import iconEmail from "../../images/imgEmail.png";
 
 function Footer() {
 
   return (
-    <footer className="footer">
-        <div className="footer__grid">
+    <footer className="footer container">
+        <div className="footer__container">
             <div>
-                <h4 className="titulo4">Zaguán de la Quinta</h4>
+                {/* <h4 className="footer__title footer__title-primary">Zaguán de la Quinta</h4> */}
                 <img className="footer__logo" src={logo} alt="debe cargar el logo" />
             </div>
-            <div>
-                <h4 className="titulo4">Horario</h4>
-                <p>Lunes a Sábado</p>
-                <p>11.00 a.m. - 5.00 p.m.</p>
-            </div>
-            <div>
-                <h4 className="titulo4">Contacto</h4>
-                <p>📞 316 291 1068</p>
-                <p>✉️ contacto@zaguandela5.com</p>
+
+            <div className="footer__media"> 
+                <div>
+                    <h4 className="footer__subtitle">Seguinos en</h4>
+                    <img className="footer__logo-facebook" src={iconFacebook} alt="debe cargar el logo" />
+                    <img className="footer__logo-facebook" src={iconInstagram} alt="debe cargar el logo" />
+                    <img className="footer__logo-facebook" src={iconEmail} alt="debe cargar el logo" />
+                </div>
+                <div className="footer__contact">
+                    <img className="footer__logo-facebook" src={iconWhatsApp} alt="debe cargar el logo" />
+                    <h4 className="footer__subtitle">316 291 1068</h4>
+                </div>
+
+                {/* <img className="footer__logo-facebook" src={iconWhatsApp} alt="debe cargar el logo" />
+                <h4 className="footer__subtitle">316 291 1068</h4> */}
+
             </div>
 
         </div>

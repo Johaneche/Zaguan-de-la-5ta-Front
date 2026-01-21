@@ -1,53 +1,97 @@
 @import url("./variables.css");
+*{
+    margin: 0;
+    padding: 0;    
+}
 
 .history{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 2rem;
 
+    /* width: 100vw;
+    height: 100vh; */
 }
 
 .history__container{
     display: flex;
 }
 
-/* .history__container_description{ } */
-
-.history__titulo1{
-    margin: 0px auto 20px;
+.history__title{
+    margin: 0px auto 2rem;
     font-family: var(--font-family-bold);
-    font-size: 52px;
+    font-size: var(--font-size-xxl);
     color: var(--primary-color-terracota);
 }
 
-.history__titulo2{
-    padding-top: 50px;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+.history__subtitle{
+    padding-top: 2rem;
+    font-family: var(--font-family);
+    font-size: var(--font-size-s);
     
     color: var(--primary-color-terracota);
 }
 
 .history__text{
-    margin: 0px;
     font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0px;
+    font-size: var(--font-size-xs);
 }
 
 .history__container_description{
-width: 500px;
+    max-width: 25rem;
+    width: 100%;
 }
 
 .history__imagen_container{
-    width: 500px;
+    padding: 5px;
+    max-width: 25rem;
+    width: 100%;
     justify-content: center;
 }
 
 .history__imagen{
-    height: 90%;
-    width: 90%;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
 }
 
+@media screen and (1023px <= width){
+    
+}
+
+@media screen and (768px <= width <= 1023px){
+  .history__container{
+        padding: 1rem;
+    }
+  
+    .history__imagen{
+        height: 95%;
+        width: 95%;
+    } 
+}
+
+@media screen and (width <= 767px){
+    .history__container{
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .history__title{
+        margin: 0px auto;
+        font-size: var(--font-size-xl);
+    }
+
+    .history__subtitle{
+        font-size: var(--font-size-xs);
+    }
+
+    .history__imagen_container{
+        padding-top: 0.5rem;
+    }
+
+    .history__imagen{
+        height: 100%;
+        width: 100%;
+    }
+
+}
