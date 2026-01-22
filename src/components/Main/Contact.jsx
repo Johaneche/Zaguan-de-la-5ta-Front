@@ -10,9 +10,9 @@ import Review from "./Review";
 
 function Contact() {
     return (
-        <main className="contact container">
-            <div>
-                <div>
+        <main className="contact">
+            <div className="contact__container">
+                <div className="contact__header">
                     <h2 className="contact__subtitle">CONTACTO</h2>
                     <h1 className="contact__title">Ven a conocernos</h1>
                     <p className="contact__text">
@@ -22,7 +22,7 @@ function Contact() {
 
                 </div>
 
-                <div className="contact__container">
+                <div className="contact__information">
 
                     <div className="contact__description_container">
 
@@ -91,10 +91,8 @@ function Contact() {
 
                         <div className="contact__location">
                             <MapaGoogle/>
-                            
-                            
-
                         </div>
+                        
                         <div>
                             <h3>Reseñas</h3>
                             <Review/>

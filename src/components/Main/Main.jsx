@@ -10,9 +10,9 @@ function Main() {
     <main className="content container">
 
       <HeroSection/>
-      <History/>
-      <Menu/>
-      <Contact/>
+      {/* <History/> */}
+      {/* <Menu/> */}
+      {/* <Contact/> */}
 
     </main>
   );

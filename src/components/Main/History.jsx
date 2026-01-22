@@ -3,7 +3,7 @@ import image from "../../../src/images/imagen-fondo1.png";
 
 function History() {
     return(
-        <section className="history container">
+        <section className="history">
             <div className="history__container">
                 <div className="history__container_description">
                     <h2 className="history__subtitle">NUESTRA HISTORIA</h2>

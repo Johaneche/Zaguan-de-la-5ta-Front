@@ -1,19 +1,19 @@
 @import url("./variables.css");
 
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
 .footer {
-  margin: 10px auto;
+  /* margin: 10px auto; */
   /* border-top: 1px solid black; */
   /* color: #545454;  */
   color: white;
   background-color: rgba(0, 0, 0, 0.57);
 }
 
-.footer__container{
+.footer__container {
   /* display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)); */
   display: flex;
@@ -21,34 +21,37 @@
   justify-content: space-around;
   align-content: center;
 }
-.footer__contact{
+
+.footer__contact {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer__logo-facebook{
+
+.footer__logo-facebook {
   height: 25px;
 }
-.footer__media{
+
+.footer__media {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer__title{
+.footer__title {
   padding: 10px;
 
-  
+
   font-family: var(--font-family);
   font-size: var(--font-size-m);
   /* color: var(--primary-color-terracota); */
   color: white;
 }
 
-.footer__subtitle{
+.footer__subtitle {
   padding: 2px;
 
-  
+
   font-family: var(--font-family);
   font-size: var(--font-size-m);
   font-weight: 100;
@@ -56,27 +59,27 @@
   color: white;
 }
 
-.footer__description{
+.footer__description {
   font-family: var(--font-family);
   font-size: var(--font-size-s);
 }
 
-.footer__logo{
+.footer__logo {
   height: 80px;
 }
 
-.footer__container{
+.footer__container {
   margin: 0;
 }
 
-.footer__author{
+.footer__author {
   padding-bottom: 10px;
-  
+
   font-family: var(--font-family);
   font-size: var(--font-size-s);
 }
 
-.footer__media{
+.footer__media {
   display: flex;
   flex-direction: column;
   max-width: 200px;
@@ -85,8 +88,21 @@
 
 
 
-@media screen and (max-width: 605px) {
-  .footer {
-    font-size: 14px;
+@media screen and (width <=767px) {
+  .footer__subtitle {
+    font-size: var(--font-size-xs);
   }
+
+  .footer__author {
+    font-size: var(--font-size-xs);
+  }
+
+  /* TODO Cambiar el tamaño del logo */
+
+  .footer__logo {
+    content: src("/zaguan-frontend/src/images/Logo-Una-Tinta-Amarillo-PNG.png");
+  }
+
+
+
 }
