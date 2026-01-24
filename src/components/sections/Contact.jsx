@@ -1,16 +1,15 @@
-import imglocation from "../../../src/images/location.png";
-import imgphone from "../../../src/images/phone.png";
-import imgtime from "../../../src/images/time.png";
-import imgEmail from "../../../src/images/imgEmail.png";
+import imglocation from "../../images/location.png";
+import imgphone from "../../images/phone.png";
+import imgtime from "../../images/time.png";
+import imgEmail from "../../images/imgEmail.png";
 
-import MapaGoogle from "./MapGoogle";
-import Review from "./Review";
+import { MapGoogle, Review } from "./index";
 
 
 
 function Contact() {
     return (
-        <main className="contact">
+        <section className="contact">
             <div className="contact__container">
                 <div className="contact__header">
                     <h2 className="contact__subtitle">CONTACTO</h2>
@@ -20,6 +19,10 @@ function Contact() {
                         experiencia culinaria unica
                     </p>
 
+                </div>
+
+                <div className="contact__location">
+                    <MapGoogle/>
                 </div>
 
                 <div className="contact__information">
@@ -39,7 +42,7 @@ function Contact() {
                                 <p className="card__description">
                                     Yumbo, Valle del Cauca, Colombia
                                 </p>
-                                <a className="card__link" href="http://">Ver en Google Maps →</a>
+                                <a className="card__link" href="https://www.google.com/maps?ll=3.582256,-76.490282&z=15&t=m&hl=es&gl=CO&mapclient=embed&cid=15542277248928533884" target="_blank" >Ver en Google Maps →</a>
                             </div>
                         </div>
 
@@ -80,23 +83,32 @@ function Contact() {
                             <div className="card__description_container">
                                 <h3 className="card__title">Correo</h3>
                                 <p className="card__description">
-                                    contacto@zaguandela5.com
+                                    info@zaguandelaquinta.com
+                                </p>
+                                <p className="card__description">
+                                    contacto@zaguandelaquinta.com
                                 </p>
                             </div>
                         </div>
 
                     </div>
 
+
+                    <div className="reviews__container">
+                        <h3>Reseñas</h3>
+                        <Review/>
+                    </div>
+
                     <div className="contact__max">
 
-                        <div className="contact__location">
-                            <MapaGoogle/>
-                        </div>
+                        {/* <div className="contact__location">
+                            <MapGoogle/>
+                        </div> */}
                         
-                        <div>
+                        {/* <div>
                             <h3>Reseñas</h3>
                             <Review/>
-                        </div>
+                        </div> */}
 
 
                     </div>
@@ -109,7 +121,7 @@ function Contact() {
 
             </div>
 
-        </main>
+        </section>
     );
 }
 

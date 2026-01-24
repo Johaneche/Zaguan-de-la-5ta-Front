@@ -1,0 +1,173 @@
+/* Estilos para AboutPage */
+
+@import url("./variables.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.about-page {
+    font-family: var(--font-family);
+}
+
+.about-page__hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 550px;
+    position: relative;
+    font-size: var(--font-size-s);
+}
+
+.about-page__hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    width: 100%;
+    max-height: 800px;
+    color: transparent;
+    mask: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.about-page__hero-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.about-page__hero-title {
+    padding-left: 100px;
+    text-align: start;
+    font-size: var(--font-size-xxl);
+    color: var(--primary-color-terracota);
+}
+
+.about-page__hero-subtitle {
+    padding-left: 100px;
+    align-items: center;
+    font-size: var(--font-size-m);
+    color: var(--primary-color-terracota);
+}
+
+.about-page__timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.timeline {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.timeline__label {
+    color: var(--primary-color-terracota);
+    font-weight: bold;
+    font-size: var(--font-size-xs);
+    padding-bottom: 10px;
+}
+
+.timeline__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.timeline__item {
+    border-left: 1px solid var(--primary-color-terracota);
+    padding: 5px 10px;
+}
+
+.timeline__marker--start {
+    background-color: var(--primary-color-terracota);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -10px;
+    left: -19px;
+    border-radius: 15px;
+}
+
+.timeline__marker {
+    background-color: var(--primary-color-terracota);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 20px;
+    left: -19px;
+    border-radius: 15px;
+}
+
+.timeline__title {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+}
+
+.timeline__item-title {
+    padding-bottom: 10px;
+}
+
+.timeline__item-text {
+    margin-bottom: 15px;
+}
+
+.chef-profile {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.chef-profile__description {
+    padding-bottom: 10px;
+}
+
+.chef-profile__image {
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.chef-profile__stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: var(--primary-color-terracota-oscuro);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat__number {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stat__label {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+@media screen and (width <=767px) {
+    .about-page__timeline {
+        flex-direction: column;
+    }
+
+    .timeline {
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,69 @@
+/* Estilos para NotFoundPage */
+
+@import url("./variables.css");
+
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+    font-family: var(--font-family);
+}
+
+.not-found-page__container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.not-found-page__error-code {
+    font-size: 6rem;
+    margin: 0;
+    color: var(--primary-color-terracota);
+    font-weight: bold;
+}
+
+.not-found-page__title {
+    margin-bottom: 1rem;
+    font-size: var(--font-size-xl);
+    color: #2c2c2c;
+}
+
+.not-found-page__message {
+    margin-bottom: 2rem;
+    font-size: var(--font-size-m);
+    color: #666;
+    line-height: 1.6;
+}
+
+.not-found-page__home-link {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color-terracota-ultraclaro);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-m);
+    transition: all 0.3s ease;
+}
+
+.not-found-page__home-link:hover {
+    background-color: var(--primary-color-terracota);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 90, 63, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .not-found-page__error-code {
+        font-size: 4rem;
+    }
+
+    .not-found-page__title {
+        font-size: var(--font-size-l);
+    }
+
+    .not-found-page__message {
+        font-size: var(--font-size-s);
+    }
+}

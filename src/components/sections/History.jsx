@@ -1,4 +1,4 @@
-import image from "../../../src/images/imagen-fondo1.png";
+import image from "../../images/imagen-fondo1.jpg";
 
 
 function History() {

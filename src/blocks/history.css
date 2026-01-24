@@ -1,20 +1,23 @@
-@import url("./variables.css");
+/* Estilos para History Section */
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url("./variables.css");
 
 .history {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .history__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    gap: 2rem;
 }
 
 .history__title {
@@ -27,14 +30,14 @@
 .history__subtitle {
     padding-top: 2rem;
     font-family: var(--font-family);
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-m);
 
     color: var(--primary-color-terracota);
 }
 
 .history__text {
     font-family: var(--font-family);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-m);
 }
 
 .history__container_description {
@@ -53,6 +56,7 @@
     border-radius: 5px;
     height: 100%;
     width: 100%;
+    opacity: 0.75;
 }
 
 @media screen and (1023px <=width) {}
@@ -69,9 +73,22 @@
 }
 
 @media screen and (width <=767px) {
+    .history {
+        padding: 1rem 0.5rem;
+    }
+
     .history__container {
         flex-direction: column;
         padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .history__container_description {
+        width: 100%;
+    }
+
+    .history__imagen_container {
+        width: 100%;
     }
 
     .history__title {
@@ -92,4 +109,7 @@
         width: 100%;
     }
 
+    .history__text {
+        font-size: var(--font-size-s);
+    }
 }

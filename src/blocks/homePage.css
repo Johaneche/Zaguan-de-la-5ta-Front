@@ -1,0 +1,26 @@
+/* Estilos para HomePage */
+
+@import url("./variables.css");
+
+.home-page {
+    font-family: var(--font-family);
+}
+
+/* Contenedor principal de la página de inicio */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Espaciado entre secciones */
+.home-page>* {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .home-page {
+        padding: 0 1rem;
+    }
+}

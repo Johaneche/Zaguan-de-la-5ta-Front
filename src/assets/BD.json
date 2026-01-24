@@ -1,0 +1,84 @@
+
+{
+  "restaurante": "Zaguan de la Quinta",
+  "menu": 
+  [
+    {
+      "id": 1,
+      "titulo": "CHURRASCO",
+      "categoria": "Parrilla",
+      "descripcion": "Lomo caracho (300gr), acompañado de papa al horno, maduro guayabo y ensalada de la casa.",
+      "precio": 45000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/35437139/pexels-photo-35437139.png",
+      "dia": 1
+    },
+    {
+      "id": 2,
+      "titulo": "STEAK PIMIENTA",
+      "categoria": "Parrilla",
+      "descripcion": "Lomo caracho (280g), en salsa cremosa a base de pimienta, acompañado de papa al horno, maduro guayabo y ensalada de la casa.",
+      "precio": 48000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/35437150/pexels-photo-35437150.png",
+      "dia": 2
+    },
+    {
+      "id": 3,
+      "titulo": "FILETE DE POLLO",
+      "categoria": "Aves",
+      "descripcion": "Filete de pollo a la parrilla, servido con papa cocina, maduro y ensalada de la casa.",
+      "precio": 28000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/35437146/pexels-photo-35437146.png",
+      "dia": 3
+    },
+    {
+      "id": 4,
+      "titulo": "FILETE DE CERDO EN SALSA BBQ",
+      "categoria": "Cerdo",
+      "descripcion": "Filete de cerdo a la parrilla, servido con salsa de BBQ, papa cocina, maduro y ensalada de la casa.",
+      "precio": 32000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/35437144/pexels-photo-35437144.png",
+      "dia": 4
+    },
+    {
+      "id": 5,
+      "titulo": "BANDEJA PAISA",
+      "categoria": "Especialidades",
+      "descripcion": "Servida con frijoles, arroz, chicharrón, chorizo, carne molida, huevo frito, tostada de plátano, maduro y ensalada.",
+      "precio": 35000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/35437142/pexels-photo-35437142.png",
+      "dia": 5
+    },
+    {
+      "id": 6,
+      "titulo": "SANCOCHO DE GALLINA",
+      "categoria": "Sopas",
+      "descripcion": "Presa de gallina o pollo a la criolla, servido con papa, tostada de plátano, arroz y ensalada.",
+      "precio": 25000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/35437173/pexels-photo-35437173.png",
+      "dia": 6
+    },
+    {
+      "id": 7,
+      "titulo": "SOBREBARRIGA A LA CRIOLLA",
+      "categoria": "Guisos",
+      "descripcion": "Sobrebarriga a la criolla servida con papa, arroz y ensalada.",
+      "precio": 32000,
+      "moneda": "COP",
+      "disponible": true,
+      "imagen_url": "https://images.pexels.com/photos/34822475/pexels-photo-34822475.jpeg",
+      "dia": 7
+    }
+  ]
+}

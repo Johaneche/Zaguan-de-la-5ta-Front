@@ -1,0 +1,200 @@
+/* Estilos para MenuPage */
+
+@import url("./variables.css");
+
+.menu-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 7rem 2rem;
+    width: 100%;
+    background-color: #faf8f6;
+}
+
+.menu-page__container {
+    max-width: 1280px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu-page__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.menu-page__subtitle {
+    color: var(--primary-color-terracota);
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.menu-page__title {
+    font-family: var(--font-family-bold);
+    font-size: 2.5rem;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+}
+
+.menu-page__description {
+    color: #666;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.menu-page__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Plato del Día - Lado Izquierdo */
+.daily-dish {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.daily-dish__badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--primary-color-terracota);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.daily-dish__image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.daily-dish__info {
+    padding: 2rem;
+}
+
+.daily-dish__title {
+    font-size: 2rem;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    font-family: var(--font-family-bold);
+}
+
+.daily-dish__description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Menú PDF - Lado Derecho */
+.menu-pdf {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #f4e4e1;
+}
+
+.menu-pdf__icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.menu-pdf__title {
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family-bold);
+}
+
+.menu-pdf__subtitle {
+    color: #999;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.menu-pdf__description {
+    color: #666;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.menu-pdf__preview {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.menu-pdf__iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.menu-pdf__download-btn {
+    background-color: var(--primary-color-terracota);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-family);
+}
+
+.menu-pdf__download-btn:hover {
+    background-color: #c85a3f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 90, 63, 0.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .menu-page {
+        padding: 5rem 1rem 1rem;
+    }
+
+    .menu-page__title {
+        font-size: 2rem;
+    }
+
+    .menu-page__content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .daily-dish__image {
+        height: 300px;
+    }
+
+    .daily-dish__title {
+        font-size: 1.5rem;
+    }
+
+    .menu-pdf__preview {
+        height: 300px;
+    }
+}

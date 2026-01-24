@@ -11,8 +11,9 @@ function Review() {
         src="" 
         style="border:0;" 
         allowfullscreen="" 
-        width= "300"
-        height= "220"
+        width= "100%"
+        max-width= "1280"
+        height= "300"
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>

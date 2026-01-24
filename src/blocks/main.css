@@ -1,19 +1,9 @@
-/* .heroSection {
-  margin: auto;
-
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../images/imagen-fondo1.jpg");
-} */
-
-#root{
-  width: 100vw;
-  height: 100vh;
+#root {
+  width: 100%;
+  min-height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
-  /* background-image: url("../images/Logo-Horizontal-Full-Color-PNG.png"); */
+  overflow-x: hidden;
 }
 
 .main__img-profile {
@@ -132,14 +122,17 @@
   .main {
     margin: 20px;
   }
+
   .main__content-paragraph {
     margin: 0;
     grid-template-rows: repeat(2, auto);
   }
+
   .main__paragraph_name {
     padding: 0;
     margin: 0;
   }
+
   .main__paragraph_about {
     padding: 0;
     margin: 0;

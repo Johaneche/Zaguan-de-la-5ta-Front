@@ -1,25 +1,22 @@
+/* Estilos para Footer */
+
 @import url("./variables.css");
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .footer {
-  /* margin: 10px auto; */
-  /* border-top: 1px solid black; */
-  /* color: #545454;  */
   color: white;
   background-color: rgba(0, 0, 0, 0.57);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .footer__container {
-  /* display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); */
   display: flex;
-
   justify-content: space-around;
   align-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .footer__contact {
@@ -30,6 +27,8 @@
 
 .footer__logo-facebook {
   height: 25px;
+  cursor: pointer;
+
 }
 
 .footer__media {
@@ -66,10 +65,12 @@
 
 .footer__logo {
   height: 80px;
+  cursor: pointer;
 }
 
 .footer__container {
   margin: 0;
+  padding: 0.5rem;
 }
 
 .footer__author {
@@ -97,12 +98,18 @@
     font-size: var(--font-size-xs);
   }
 
-  /* TODO Cambiar el tamaño del logo */
-
-  .footer__logo {
-    content: src("/zaguan-frontend/src/images/Logo-Una-Tinta-Amarillo-PNG.png");
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
+  .footer__media {
+    max-width: 100%;
+    align-items: center;
+  }
 
-
+  .footer__logo {
+    height: 60px;
+  }
 }

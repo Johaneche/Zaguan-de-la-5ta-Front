@@ -1,28 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
-// import React from 'react';
-// import { Route } from 'react-router-dom';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import Main from './components/Main/Main.jsx'
+import { Header, Footer } from './components/layout'
+import { HomePage, MenuPage, AboutPage, ServicesPage, NotFoundPage } from './pages'
 
 function App() {
   return (
-    <>
-    {/* <Route> */}
+    <Router>
       <Header/>
-      <Main />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/quienes-somos" element={<AboutPage />} />
+        <Route path="/servicios" element={<ServicesPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <Footer/>
-    {/* </Route> */}
-      
-      
-    </>
+    </Router>
   )
 }
 
