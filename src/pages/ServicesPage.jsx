@@ -9,7 +9,7 @@ function ServicesPage() {
             <div className="services-page__hero">
                 <div className="services-page__hero-content">
                     <img className="services-page__hero-image" src={imageBackground} alt="Restarurante Zaguan" />
-                    <h1 className="services-page__hero-title">Eventos con mucho sabor!</h1>
+                    {/* <h1 className="services-page__hero-title">Eventos con mucho sabor!</h1> */}
                     <h2 className="services-page__hero-subtitle">Hacemos de tu evento una experiencia inolvidable!</h2>
                 </div>
                 
@@ -65,7 +65,7 @@ function ServicesPage() {
 
                     {/* CTA Button */}
                     <div className="services-page__cta-container">
-                        <button className="services-page__cta-btn">
+                        <button className="services-page__cta-btn" onClick={()=>{window.open("https://wa.me/3162911068", "_blank", "noopener,noreferrer")}}>
                             Cotiza tu evento
                         </button>
                     </div>
