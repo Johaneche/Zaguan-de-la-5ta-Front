@@ -283,19 +283,9 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
-    animation: fadeIn 0.3s ease;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
   }
 }
+
 
 /* Tablet */
 @media screen and (768px <=width <=1023px) {
